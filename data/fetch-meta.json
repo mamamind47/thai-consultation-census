@@ -1,0 +1,179 @@
+{
+  "endpoint": "https://apig.law.go.th/dga-user-service-survey/surveys",
+  "request_body_template": {
+    "searchText": "",
+    "size": 200,
+    "page": "<n>",
+    "sort": "desc"
+  },
+  "fetch_started_utc": "2026-09-21T16:44:59.298715+00:00",
+  "fetch_finished_utc": "2026-09-21T16:46:47.785399+00:00",
+  "last_page_reported_by_api": 27,
+  "pages_requested": 32,
+  "page_log": [
+    {
+      "page": 1,
+      "status": 200,
+      "n_rows": 175
+    },
+    {
+      "page": 2,
+      "status": 200,
+      "n_rows": 116
+    },
+    {
+      "page": 3,
+      "status": 200,
+      "n_rows": 148
+    },
+    {
+      "page": 4,
+      "status": 200,
+      "n_rows": 168
+    },
+    {
+      "page": 5,
+      "status": 200,
+      "n_rows": 181
+    },
+    {
+      "page": 6,
+      "status": 200,
+      "n_rows": 114
+    },
+    {
+      "page": 7,
+      "status": 200,
+      "n_rows": 181
+    },
+    {
+      "page": 8,
+      "status": 200,
+      "n_rows": 186
+    },
+    {
+      "page": 9,
+      "status": 200,
+      "n_rows": 192
+    },
+    {
+      "page": 10,
+      "status": 200,
+      "n_rows": 200
+    },
+    {
+      "page": 11,
+      "status": 200,
+      "n_rows": 194
+    },
+    {
+      "page": 12,
+      "status": 200,
+      "n_rows": 199
+    },
+    {
+      "page": 13,
+      "status": 200,
+      "n_rows": 183
+    },
+    {
+      "page": 14,
+      "status": 200,
+      "n_rows": 187
+    },
+    {
+      "page": 15,
+      "status": 200,
+      "n_rows": 183
+    },
+    {
+      "page": 16,
+      "status": 200,
+      "n_rows": 197
+    },
+    {
+      "page": 17,
+      "status": 200,
+      "n_rows": 188
+    },
+    {
+      "page": 18,
+      "status": 200,
+      "n_rows": 193
+    },
+    {
+      "page": 19,
+      "status": 200,
+      "n_rows": 194
+    },
+    {
+      "page": 20,
+      "status": 200,
+      "n_rows": 193
+    },
+    {
+      "page": 21,
+      "status": 200,
+      "n_rows": 192
+    },
+    {
+      "page": 22,
+      "status": 200,
+      "n_rows": 192
+    },
+    {
+      "page": 23,
+      "status": 200,
+      "n_rows": 193
+    },
+    {
+      "page": 24,
+      "status": 200,
+      "n_rows": 185
+    },
+    {
+      "page": 25,
+      "status": 200,
+      "n_rows": 196
+    },
+    {
+      "page": 26,
+      "status": 200,
+      "n_rows": 195
+    },
+    {
+      "page": 27,
+      "status": 200,
+      "n_rows": 199
+    },
+    {
+      "page": 28,
+      "status": 200,
+      "n_rows": 194
+    },
+    {
+      "page": 29,
+      "status": 200,
+      "n_rows": 185
+    },
+    {
+      "page": 30,
+      "status": 200,
+      "n_rows": 196
+    },
+    {
+      "page": 31,
+      "status": 200,
+      "n_rows": 73
+    },
+    {
+      "page": 32,
+      "status": 200,
+      "n_rows": 0
+    }
+  ],
+  "n_unique_surveys": 5572,
+  "n_duplicate_rows_seen": 0,
+  "output_file": "data/surveys.jsonl",
+  "output_sha256": "0096763713d7b555e970726d03b22b9fc0fe396fa351ecb31f5ac093974e3cde"
+}

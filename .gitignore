@@ -1,0 +1,6 @@
+# Raw API payloads: ~207 MB, includes the full HTML body of every notice.
+# Regenerate with scripts/fetch.py; the tidy CSV in data/ is the published artefact.
+data/surveys.jsonl
+__pycache__/
+*.pyc
+.DS_Store
