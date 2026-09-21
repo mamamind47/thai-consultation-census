@@ -4,7 +4,7 @@ A complete census of public consultations posted to Thailand's Central Law Porta
 (ระบบกลางทางกฎหมาย, law.go.th), the portal mandated by the *Act on Legislative Drafting
 and Evaluation of Law B.E. 2562 (2019)* implementing s.77 of the 2017 Constitution.
 
-**5,572 consultations, December 2020 – September 2026, 293 lead agencies, 1,780,449 comments.**
+**5,572 consultations, December 2020 – September 2026, 293 lead agencies, 1,780,449 responses.**
 
 Pulled 2026-09-21. See [FINDINGS.md](FINDINGS.md) for what the data shows.
 
@@ -73,7 +73,7 @@ Each consultation is viewable at `https://law.go.th/listeningDetail?survey_id=<i
    Read the JSONL with `split("\n")`.
 
 4. **The listing is recency-sorted, so samples are biased.** A 1,212-row sample gave 14.7%
-   zero-comment draft laws and a 1,661-row sample gave 19.7%; the census says **11.7%**.
+   zero-response draft laws and a 1,661-row sample gave 19.7%; the census says **11.7%**.
    Participation has risen sharply over time, so any sample weighted toward recent or
    toward old records is wrong in a predictable direction. Take the census.
 

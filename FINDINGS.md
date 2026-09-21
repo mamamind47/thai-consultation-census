@@ -8,7 +8,7 @@ September 2026. Reproduce with `scripts/analyze.py` and `scripts/explain.py`.
 This is the first thing to say, because it contradicts the assumption the project started
 from — that the mechanism sits unused.
 
-| Year closed | n | median comments | zero comments | total comments |
+| Year closed | n | median responses | zero responses | total responses |
 |---|---:|---:|---:|---:|
 | 2021 | 69 | 3 | 27.5% | 16,264 |
 | 2022 | 386 | 2 | 34.2% | 31,488 |
@@ -18,7 +18,7 @@ from — that the mechanism sits unused.
 | 2026 | 1,310 | 11 | **9.2%** | 982,956 |
 
 Consultations receiving nothing at all fell from about one in three to about one in eleven.
-Annual comment volume grew roughly 31×. Any claim that Thailand's consultation mechanism is
+Annual response volume grew roughly 31×. Any claim that Thailand's consultation mechanism is
 dormant is false on this data.
 
 ## 2. But participation is extraordinarily concentrated
@@ -26,14 +26,14 @@ dormant is false on this data.
 | | |
 |---|---|
 | Gini coefficient | **0.967** |
-| Top 1% (53 consultations) | **82.0%** of all comments |
+| Top 1% (53 consultations) | **82.0%** of all responses |
 | Top 5% (268) | 91.9% |
-| Single largest consultation | **39.3%** of all comments |
-| The 48.3% with ≤5 comments | **0.20%** of all comments |
+| Single largest consultation | **39.3%** of all responses |
+| The 48.3% with ≤5 responses | **0.20%** of all responses |
 | median 6 | mean 331.5 |
 
 One lead agency, **สำนักงานประกันสังคม** (Social Security Office), accounts for **49.3%**
-of every comment in the system — 877,075 of 1,780,449.
+of every response in the system — 877,075 of 1,780,449 responses.
 
 Restricted to primary legislation (ร่างกฎหมาย, n=941): Gini 0.922, median 13,
 11.7% zero, top 1% hold 53.4%.
@@ -55,7 +55,7 @@ Roughly 1.9×, not the order-of-magnitude gap an earlier sample suggested.
 The eight largest are all rules that change money reaching individuals who already belong
 to an organised mass constituency:
 
-| Comments | Agency | Subject |
+| Responses | Agency | Subject |
 |---:|---|---|
 | 699,927 | สำนักงานประกันสังคม | ministerial regulation on contributions |
 | 111,201 | อย. | drug listing notification |
@@ -85,11 +85,11 @@ Among agencies running 50 or more consultations:
 | กรมการขนส่งทางราง | 57 | **135** | 1.8% |
 
 Financial-sector regulators consult constantly into near-silence. The SEC has run 257
-consultations at a median of zero comments. Fisheries has run 559 at a median of 18.
+consultations at a median of zero responses. Fisheries has run 559 at a median of 18.
 
 ## 6. What correlates with participation
 
-Spearman rho against log(1 + comments), n=5,371:
+Spearman rho against log(1 + responses), n=5,371:
 
 | Predictor | rho |
 |---|---:|
@@ -98,11 +98,11 @@ Spearman rho against log(1 + comments), n=5,371:
 | `n_invited` (stakeholder agencies listed) | **+0.025** |
 | `question_count` | −0.025 |
 
-**Visibility dominates.** Consultations that received no comments have a median of
-**62 page views**; those receiving more than 100 comments have a median of **1,645**.
+**Visibility dominates.** Consultations that received no responses have a median of
+**62 page views**; those receiving more than 100 responses have a median of **1,645**.
 Silence is mostly a matter of nobody arriving, not of visitors declining to write.
 
-| Comments | n | median views |
+| Responses | n | median views |
 |---|---:|---:|
 | zero | 1,095 | 62 |
 | 1–5 | 1,499 | 140 |
@@ -134,7 +134,7 @@ That is **not** a breach of any statutory minimum: sections 13–15 of the 2019 
 minimum consultation period. Section 14 requires only that the start and end dates be
 announced. Checked against the Gazette text (เล่ม ๑๓๖ ตอนที่ ๗๒ ก, 31 May 2019).
 
-## 8. Is `answer_count` people or comments?
+## 8. Does `answer_count` count people?
 
 This is the first question a reviewer will ask, so it is tested rather than assumed.
 
