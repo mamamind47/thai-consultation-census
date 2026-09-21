@@ -18,8 +18,15 @@ from — that the mechanism sits unused.
 | 2026 | 1,310 | 11 | **9.2%** | 982,956 |
 
 Consultations receiving nothing at all fell from about one in three to about one in eleven.
-Annual response volume grew roughly 31×. Any claim that Thailand's consultation mechanism is
-dormant is false on this data.
+Any claim that Thailand's consultation mechanism is dormant is false on this data.
+
+**But the volume growth is mostly one case, and the composition changed.** 2026 is
+year-to-date. One consultation supplies 699,927 of the 982,956 responses recorded in 2026
+(**71.2%**); excluding it leaves 283,029, *below* the full-year 2025 total of 438,144.
+Subordinate-regulation consultations fell 860 → 305 between 2025 and 2026 while
+principles-stage rose 37 → 496, so the pooled median moves on composition alone. Primary
+legislation went from 143 to 467 consultations but its median response count **fell from
+26 to 12**. Do not describe the rise as uniform improvement.
 
 ## 2. But participation is extraordinarily concentrated
 
@@ -38,6 +45,20 @@ of every response in the system — 877,075 of 1,780,449 responses.
 Restricted to primary legislation (ร่างกฎหมาย, n=941): Gini 0.922, median 13,
 11.7% zero, top 1% hold 53.4%.
 
+**Sensitivity — report this, never the single Gini alone:**
+
+| Population | n | Gini | Top 1% |
+|---|---:|---:|---:|
+| All closed | 5,371 | 0.9668 | 82.0% |
+| Excluding largest | 5,370 | 0.9457 | 70.6% |
+| Excluding 8 largest | 5,363 | 0.9104 | 52.2% |
+| Excluding Social Security Office | 5,349 | 0.9372 | 66.4% |
+| Positive responses only | 4,276 | 0.9583 | 80.2% |
+
+Concentration is not produced by the dominant cases, nor by the zeros: among consultations
+with any response the Gini is still 0.958. But removing eight cases from 5,371 halves the
+top-percentile share, so the single figure must never be reported alone.
+
 So both statements are true at once: the mechanism is being used more every year, and
 almost all of that use is a handful of consultations.
 
@@ -48,23 +69,38 @@ almost all of that use is a handful of consultations.
 | Thailand, primary legislation (n=941) | **11.7%** |
 | Norway, all consultations (n=4,062) — Bunea & Nørbech 2025 | 6.28% |
 
-Roughly 1.9×, not the order-of-magnitude gap an earlier sample suggested.
+**The ratio is a choice of scope, not a finding:** 1.86× comparing Thai primary legislation
+only, **3.25×** comparing all Thai types (20.39% zero). Norway's 6.28% covers multiple
+instrument types over a different period, so neither is like-for-like. A valid comparison
+needs the Norwegian replication data and matched instrument type, stage and window. Note
+also that the Thai ร่างกฎหมาย category does not cleanly isolate primary legislation — the
+Entertainment Complex Bill is filed under หลักการ.
 
-## 4. What the mega-consultations have in common
+## 4. The largest consultations
 
-The eight largest are all rules that change money reaching individuals who already belong
-to an organised mass constituency:
+An earlier version of this file claimed these were all rules changing money reaching an
+organised constituency. That was wrong: it was written from titles truncated at 44
+characters. The full titles are below. Retrieve any notice at
+`law.go.th/listeningDetail?survey_id=<id>`.
 
-| Responses | Agency | Subject |
-|---:|---|---|
-| 699,927 | สำนักงานประกันสังคม | ministerial regulation on contributions |
-| 111,201 | อย. | drug listing notification |
-| 97,062 | สำนักงานประกันสังคม | pension calculation formula |
-| 77,789 | สำนักงานเศรษฐกิจการคลัง | draft primary legislation |
-| 55,584 | สำนักงานประกันสังคม | wage ceiling for contributions |
-| 53,754 | กรมสนับสนุนบริการสุขภาพ | village health volunteer (อสม.) bill |
-| 29,588 | กรมสนับสนุนบริการสุขภาพ | อสม. bill, earlier round |
-| 23,015 | กรมบัญชีกลาง | civil servant medical benefits |
+| Responses | ID | Agency | Subject |
+|---:|---:|---|---|
+| 699,927 | 6421 | Social Security Office | **Election of employer and insured-person representatives to the Social Security Board** |
+| 111,201 | 3748 | FDA | **Listing of category-5 narcotics** |
+| 97,062 | 5885 | Social Security Office | Old-age pension calculation formula (ss.33, 39) |
+| 77,789 | 4903 | Fiscal Policy Office | **Entertainment Complex Business Bill** (casino) |
+| 55,584 | 1511 | Social Security Office | Wage floor and ceiling for contributions |
+| 53,754 | 6965 | Dept. Health Service Support | Village health volunteers (อสม.) Bill |
+| 29,588 | 5269 | Dept. Health Service Support | อสม. Bill, earlier round |
+| 23,015 | 7616 | Comptroller General | Civil service medical benefits decree |
+
+Four of these fit a benefit-constituency account: pension formula, contribution wage base,
+the two อสม. bills, civil service medical benefits. Four do not. The largest is a board
+election procedure. The second is narcotics scheduling. The fourth is a casino bill with
+no pre-existing beneficiary constituency at all.
+
+Constituency mobilisation and issue salience each fit part of the list. The data contain
+no participant identities, so they cannot be separated. See section 9.
 
 ## 5. Agency variation is the largest untold story
 
