@@ -32,21 +32,37 @@ Research*, which does exactly this for Norway: 4,062 consultations, 2009–2023,
 ## Layout
 
 ```
-scripts/fetch.py         full census pull + provenance record
-scripts/make_dataset.py  raw JSONL -> tidy CSV
-scripts/analyze.py       participation distribution, concentration, benchmark
-scripts/explain.py       what correlates with participation
-data/consultations.csv   the dataset (5,572 rows, 21 columns)  <- published
-data/fetch-meta.json     endpoint, timing, page log, sha256    <- published
-data/surveys.jsonl       raw API payloads, ~207 MB             <- gitignored
+scripts/common.py          shared loading, Gini, Spearman
+scripts/reproduce.py       every figure in the manuscript, labelled by table
+scripts/validate_unit.py   response field vs agencies' own published summaries
+scripts/fetch.py           census pull + provenance record
+scripts/make_dataset.py    raw JSONL -> tidy CSV
+data/consultations.csv     the dataset, 5,572 rows x 21 columns   <- published
+data/DATA-DICTIONARY.md    every column, and what the data omit   <- published
+data/fetch-meta.json       endpoint, timing, page log, sha256     <- published
+data/surveys.jsonl         raw API payloads, ~207 MB              <- gitignored
+paper/                     manuscript source
 ```
 
-Reproduce with:
+## Reproducing the manuscript
+
+Every number stated in the paper comes from the published CSV and nothing else:
 
 ```
-python3 scripts/fetch.py && python3 scripts/make_dataset.py
-python3 scripts/analyze.py && python3 scripts/explain.py
+python3 scripts/reproduce.py
 ```
+
+No network access, no raw payload, no dependencies beyond the standard library.
+Output is labelled by the table or section where each figure appears.
+
+**Re-fetching does not reproduce these figures.** `scripts/fetch.py` rebuilds the raw
+payload and `scripts/make_dataset.py` derives the CSV from it, but the portal's response
+and view counters continue to move, so a fresh pull gives a later snapshot rather than
+this one. The CSV is the archival artefact; treat the fetch scripts as documentation of
+how it was made.
+
+`scripts/validate_unit.py` re-runs the response-field check. It does use the network,
+downloading agencies' published summary documents, and needs `pdftotext` on the path.
 
 ## Source
 
@@ -114,6 +130,13 @@ Each consultation is viewable at `https://law.go.th/listeningDetail?survey_id=<i
   about notification must be limited to what the public record shows.
 - **Nothing here is causal.** Agencies choose what to consult on, how long to leave it
   open, and how hard to promote it. Every correlation reported is entangled with that choice.
+
+## Archiving
+
+The CSV, `fetch-meta.json` and `DATA-DICTIONARY.md` are the citable artefacts.
+`CITATION.cff` carries the metadata. For a permanent identifier, deposit a tagged
+release to Zenodo and record the DOI here and in the manuscript's data availability
+statement; a GitHub URL alone does not satisfy most journals' data policies.
 
 ## Data licence
 

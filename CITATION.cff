@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: >-
+  Thailand Central Law Portal consultation participation census,
+  2020-2026
+message: >-
+  If you use this dataset or code, please cite it using these metadata.
+type: dataset
+authors:
+  - family-names: Sittikong
+    given-names: Badeesorn
+    affiliation: >-
+      School of Information Technology, King Mongkut's University of
+      Technology Thonburi
+abstract: >-
+  A complete census of public consultations published on Thailand's Central
+  Law Portal (law.go.th), the channel made mandatory by the Act on
+  Legislative Drafting and Evaluation of Law B.E. 2562 (2019) in
+  implementation of section 77 of the 2017 Constitution. 5,572
+  consultations posted between December 2020 and September 2026, of which
+  5,371 had closed at collection, run by 293 agencies and recording
+  1,780,449 responses. Includes the collection and analysis code and a
+  record of the collection.
+keywords:
+  - public consultation
+  - regulatory governance
+  - Thailand
+  - e-participation
+  - open government data
+license: MIT
+date-released: 2026-09-22
