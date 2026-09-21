@@ -5,3 +5,9 @@ __pycache__/
 *.pyc
 .DS_Store
 data/summaries/
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.xdv
