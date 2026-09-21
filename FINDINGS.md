@@ -46,7 +46,7 @@ almost all of that use is a handful of consultations.
 | | zero submissions |
 |---|---|
 | Thailand, primary legislation (n=941) | **11.7%** |
-| Norway, all consultations (n=4,062) — Bunea et al. 2025 | 6.28% |
+| Norway, all consultations (n=4,062) — Bunea & Nørbech 2025 | 6.28% |
 
 Roughly 1.9×, not the order-of-magnitude gap an earlier sample suggested.
 
@@ -113,7 +113,7 @@ Silence is mostly a matter of nobody arriving, not of visitors declining to writ
 **Naming the public as affected matters.** Where `affected_person` lists ประชาชน:
 median 13 comments, 13.1% zero. Where it does not: median 3, 25.1% zero.
 
-**The invitation lever is missing.** In Bunea et al.'s Norwegian data, the number of
+**The invitation lever is missing.** In Bunea & Nørbech's Norwegian data, the number of
 invitations issued is a central driver of participation. The Thai analogue barely moves
 anything (rho = +0.025) — because the field is usually empty. **3,555 of 5,371
 consultations (66%) list no stakeholder agencies at all.**
@@ -127,12 +127,45 @@ consultations. It does **not** show that notification failed to occur — `stack
 holds agency identifiers, not individuals, and individual registrations may not surface in
 the public payload.
 
-## 7. One thing that is *not* a finding
+## 7. Consultation length against the recommended floor
 
-323 consultations (6.0%) ran for fewer than 15 days, and 35% of those received nothing.
-That is **not** a breach of any statutory minimum: sections 13–15 of the 2019 Act set no
-minimum consultation period. Section 14 requires only that the start and end dates be
-announced. Checked against the Gazette text (เล่ม ๑๓๖ ตอนที่ ๗๒ ก, 31 May 2019).
+This needs stating precisely, because the obvious version of it is wrong.
+
+**The Act sets no minimum consultation period.** Sections 13–19 of the 2019 Act require
+that the start and end dates be announced (s.14) but fix no length. Verified against the
+Gazette text, เล่ม ๑๓๖ ตอนที่ ๗๒ ก, 31 May 2019.
+
+**A 15-day floor exists, but only as advice.** The Law Development Commission's
+recommendation on consultation states that consultation conducted through the information
+system *ควรมีระยะเวลาไม่น้อยกว่า 15 วัน* — "should have a period of not less than 15 days".
+The verb is ควร, should. It is not mandatory, and OECD (2020) describes it as a
+"set minimum period of 15 days", which overstates its force.
+
+**For subordinate regulations the floor is expressly waivable.** The Council of State's
+2022 guideline, issued under the ministerial regulation made pursuant to s.5 para 5,
+applies the Act's rules to กฎ *โดยอนุโลม* and permits consultation shorter than 15 days
+where there is urgent necessity — giving as an example the risk that a law lapses under
+s.22 para 2.
+
+Against that, the census:
+
+| | median duration | shorter than 15 days | shorter than 30 days |
+|---|---:|---:|---:|
+| All closed (n=5,371) | 16 days | **6.0%** (323) | 65.4% |
+| ร่างกฎหมาย (941) | 30 days | — | 46.0% |
+| กม.ลำดับรองอื่นๆ (3,184) | 15 days | — | **84.2%** |
+| ประเมินผลสัมฤทธิ์ (618) | 30 days | — | 44.2% |
+| หลักการ (628) | 30 days | — | 20.4% |
+
+Primary legislation sits at the 30-day mark; subordinate regulation sits at the 15-day
+advisory floor, with 84% running under 30 days. Duration correlates only weakly with
+participation (rho = +0.161), so length is not the main lever — but the 140 consultations
+running seven days or less have a median of **zero** responses and 55% receive nothing.
+
+For comparison, OECD (2020) Box 5 records that OECD countries generally allow a minimum
+of four weeks, that many require or recommend 30 days or more, and that Switzerland and
+the European Union operate 12-week minimums. Thailand's advisory floor is half the
+commonly recommended figure.
 
 ## 8. Does `answer_count` count people?
 
@@ -164,7 +197,7 @@ comment-per-question tally, and it is not a view count.
 
 ## Sources
 
-- Bunea, A., Chrisp, J. & Vrangbæk, K. (2025). Do government invitations to consultations
+- Bunea, A. & Nørbech, I. (2025). Do government invitations to consultations
   shape stakeholder participation in public policymaking? *European Journal of Political
   Research*. doi:10.1111/1475-6765.70027
 - OECD (2025). *Regulatory Reform in Thailand*. Box 3.3.

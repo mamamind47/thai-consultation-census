@@ -25,7 +25,7 @@ publishes the numbers:
 The portal's own listing endpoint answers the question directly, so this repository
 just asks it and publishes the result.
 
-The comparison point is **Bunea, Chrisp & Vrangbæk (2025)**, *European Journal of Political
+The comparison point is **Bunea & Nørbech (2025)**, *European Journal of Political
 Research*, which does exactly this for Norway: 4,062 consultations, 2009–2023, of which
 **6.28% received zero submissions**.
 
