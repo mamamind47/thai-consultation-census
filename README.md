@@ -82,15 +82,28 @@ Each consultation is viewable at `https://law.go.th/listeningDetail?survey_id=<i
    `end_date` against your fetch timestamp, not from `date_balance`, which the server
    computes at request time.
 
-6. **`answer_count` is comments, externally validated.** OECD (2025) Box 3.3 names the
-   largest consultation as **55,591 comments**; this field gives **55,584** for that record
-   (ร่างกฎกระทรวงกำหนดค่าจ้างขั้นต่ำและขั้นสูงฯ, closed 2023-02-27). Whether one comment
-   equals one person is still **not** established — see Limitations.
+6. **`answer_count` counts respondents, validated two ways.** OECD (2025) Box 3.3 names
+   the largest consultation as **55,591 comments**; this field gives **55,584** for that
+   record (ร่างกฎกระทรวงกำหนดค่าจ้างขั้นต่ำและขั้นสูงฯ, closed 2023-02-27). Separately,
+   `scripts/validate_unit.py` compares the field against the respondent counts agencies
+   state in their own published summaries ("ผู้จัดส่งความคิดเห็น จำนวน ๓๑ ราย"): **68%
+   exact agreement** on the unbiased subset. See Limitations for the residual 32%.
+
+7. **Normalise the pattern, not just the text.** Thai PDF extraction drops combining marks,
+   so phrase matching runs on a mark-stripped string — but the search literals must be put
+   through the same normaliser. `"จำนวน"` normalises to `"จานวน"`; matching the raw literal
+   against normalised text returns nothing, silently, with no error.
 
 ## Limitations
 
-- **Unit of `answer_count` is unresolved.** OECD calls these "comments", which does not
-  settle whether the field counts submissions or unique respondents.
+- **`answer_count` agrees with agencies' own figures about two thirds of the time.**
+  Across 82 consultations whose summary states a respondent count, 66% match exactly;
+  on the 22 documents stating exactly one number (no selection bias) the rate is 68%.
+  Of the remainder, 18% state fewer than the field (agencies often report only those
+  giving substantive comments, excluding "ไม่แสดงความคิดเห็น") and 16% state more
+  (summaries may cover the meetings, interviews and surveys that s.13 also permits).
+  So the field is a respondent count, with roughly a third of cases diverging for
+  reasons that are directional and explicable rather than random.
 - **View counts disagree with OECD.** OECD reports 373,000 views for the 2023 wage-ceiling
   consultation; the API gives 197,695. Unexplained.
 - **A second portal is not covered.** The Secretariat of the Parliament runs its own

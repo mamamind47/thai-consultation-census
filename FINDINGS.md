@@ -134,6 +134,34 @@ That is **not** a breach of any statutory minimum: sections 13–15 of the 2019 
 minimum consultation period. Section 14 requires only that the start and end dates be
 announced. Checked against the Gazette text (เล่ม ๑๓๖ ตอนที่ ๗๒ ก, 31 May 2019).
 
+## 8. Is `answer_count` people or comments?
+
+This is the first question a reviewer will ask, so it is tested rather than assumed.
+
+2,247 closed consultations publish a summary of results. Agencies commonly state a
+respondent count in prose — "ผู้จัดส่งความคิดเห็น จำนวน ๓๑ ราย". Comparing that stated
+figure against the field, for 82 consultations where a count could be extracted:
+
+| | n | share |
+|---|---:|---:|
+| stated == `answer_count` | 54 | **66%** |
+| stated < `answer_count` | 15 | 18% |
+| stated > `answer_count` | 13 | 16% |
+
+Because a document can state several numbers, the comparison picks the one closest to
+`answer_count`, which biases toward agreement. Restricting to the 22 documents that
+state exactly one number removes that bias and gives **68% exact** — so the bias was
+not doing the work. Exact matches include large values (4,328; 2,832; 2,791).
+
+The divergences are directional, not random. Summaries stating *fewer* typically report
+only respondents who gave substantive comments, excluding the "ไม่แสดงความคิดเห็น"
+category that these documents break out separately. Summaries stating *more* can cover
+participation gathered through the meetings, interviews and surveys that s.13 also
+permits alongside the portal.
+
+Conclusion: the field counts respondents to the portal consultation. It is not a
+comment-per-question tally, and it is not a view count.
+
 ## Sources
 
 - Bunea, A., Chrisp, J. & Vrangbæk, K. (2025). Do government invitations to consultations
